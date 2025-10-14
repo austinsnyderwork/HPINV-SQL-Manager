@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project]
+name = "hpinv_sql_pull"
+version = "0.0.1"
+authors = [
+    { name="Austin Snyder", email="austin-snyder@uiowa.edu" },
+]
+description = "Manages the connection and pull from the HPINV SQL Server database.."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pandas",
+    "numpy",
+    "sqlalchemy"
+]
