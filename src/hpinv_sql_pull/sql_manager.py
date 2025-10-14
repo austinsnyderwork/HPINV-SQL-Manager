@@ -19,13 +19,14 @@ class SqlManager:
             f"mssql+pyodbc://{server}/{database}?driver={driver}&trusted_connection=yes"
         )
 
-    def pull(self, sql_path: str) -> pd.DataFrame:
+    def pull(self, sql_path: str, params: list = None) -> pd.DataFrame:
         with open(sql_path, "r") as f:
             query = f.read()
 
         df = pd.read_sql(
             query,
-            con=self.engine
+            con=self.engine,
+            params=params
         )
 
         return df
