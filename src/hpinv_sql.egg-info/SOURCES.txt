@@ -1,0 +1,9 @@
+pyproject.toml
+src/hpinv_sql/__init__.py
+src/hpinv_sql/query_path_registry.py
+src/hpinv_sql/sql_manager.py
+src/hpinv_sql.egg-info/PKG-INFO
+src/hpinv_sql.egg-info/SOURCES.txt
+src/hpinv_sql.egg-info/dependency_links.txt
+src/hpinv_sql.egg-info/requires.txt
+src/hpinv_sql.egg-info/top_level.txt

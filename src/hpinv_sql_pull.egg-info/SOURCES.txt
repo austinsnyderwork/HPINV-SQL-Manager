@@ -1,8 +1,0 @@
-pyproject.toml
-src/hpinv_sql_pull/__init__.py
-src/hpinv_sql_pull/sql_manager.py
-src/hpinv_sql_pull.egg-info/PKG-INFO
-src/hpinv_sql_pull.egg-info/SOURCES.txt
-src/hpinv_sql_pull.egg-info/dependency_links.txt
-src/hpinv_sql_pull.egg-info/requires.txt
-src/hpinv_sql_pull.egg-info/top_level.txt

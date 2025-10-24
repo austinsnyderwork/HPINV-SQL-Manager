@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 where = ["src"]
 
 [project]
-name = "hpinv_sql_pull"
+name = "hpinv_sql"
 version = "0.0.1"
 authors = [
     { name="Austin Snyder", email="austin-snyder@uiowa.edu" },
@@ -17,5 +17,6 @@ requires-python = ">=3.8"
 dependencies = [
     "pandas",
     "numpy",
-    "sqlalchemy"
+    "sqlalchemy",
+    "pyodbc"
 ]

@@ -1,6 +1,10 @@
+from pathlib import Path
+from typing import Type
 
 import pandas as pd
 from sqlalchemy import create_engine
+
+from .query_path_registry import QueryPullSpec
 
 
 class SqlManager:
@@ -19,14 +23,14 @@ class SqlManager:
             f"mssql+pyodbc://{server}/{database}?driver={driver}&trusted_connection=yes"
         )
 
-    def pull(self, sql_path: str, params: list = None) -> pd.DataFrame:
-        with open(sql_path, "r") as f:
+    def pull(self, query_spec: QueryPullSpec) -> pd.DataFrame:
+        with open(query_spec.query_path, "r") as f:
             query = f.read()
 
         df = pd.read_sql(
             query,
             con=self.engine,
-            params=params
+            params=query_spec.params
         )
 
         return df

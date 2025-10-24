@@ -1,5 +1,5 @@
 Metadata-Version: 2.4
-Name: hpinv_sql_pull
+Name: hpinv_sql
 Version: 0.0.1
 Summary: Manages the connection and pull from the HPINV SQL Server database..
 Author-email: Austin Snyder <austin-snyder@uiowa.edu>
@@ -8,3 +8,4 @@ Description-Content-Type: text/markdown
 Requires-Dist: pandas
 Requires-Dist: numpy
 Requires-Dist: sqlalchemy
+Requires-Dist: pyodbc
